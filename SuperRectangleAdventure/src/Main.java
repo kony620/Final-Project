@@ -16,6 +16,7 @@ public class Main {
 	private DrawingSurface panel2;
 	
 	private PSurfaceAWT.SmoothCanvas processingCanvas;
+	private JLabel score;
 	
 	public Main() {
 		panel2 = new DrawingSurface();
