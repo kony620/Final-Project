@@ -51,7 +51,7 @@ public class DrawingSurface extends PApplet {
 	// execute once when the program begins
 	public void setup() {
 		//size(0,0,PApplet.P3D);
-		assets.add(loadImage("Capture.PNG"));
+		assets.add(loadImage("uglyRectangle.png"));
 		
 		spawnNewPlayer();
 	}
