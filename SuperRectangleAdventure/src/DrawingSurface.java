@@ -19,7 +19,7 @@ public class DrawingSurface extends PApplet {
 	private SafeSquare safe1;
 	private SafeSquare safe2;
 	private Level level;
-	private ScoreCounter score;
+	private ScoreCounter scores;
 	private ArrayList<Shape> obstacles;
 	private ArrayList<Shape> spikes;
 
@@ -40,7 +40,7 @@ public class DrawingSurface extends PApplet {
 		level = new Level(1);
 		obstacles = level.getLevels();
 		spikes = level.getSpikes();
-		score = new ScoreCounter();
+		scores = new ScoreCounter();
 
 		
 		
@@ -156,7 +156,7 @@ public class DrawingSurface extends PApplet {
 				obstacles = level.getLevels();
 				safe1.swap();
 				safe2.swap();
-				score.increaseScore(1);
+				scores.increaseScore(1);
 
 			}
 			
@@ -170,13 +170,13 @@ public class DrawingSurface extends PApplet {
 				obstacles = level.getLevels();
 				safe1.swap();
 				safe2.swap();
-				score.increaseScore(1);
+				scores.increaseScore(1);
 
 			}
 		}
 		
 		textSize(15);
-		text("Score : "+score.getScore(), 10, 20);
+		text("Score : "+scores.getScore(), 10, 20);
 		fill(0, 102, 153);
 		
 	}
