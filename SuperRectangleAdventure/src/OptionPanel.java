@@ -19,17 +19,23 @@ public class OptionPanel extends JPanel implements ActionListener {
 		startButton.setIcon(new ImageIcon("startbutton.png"));
 		startButton.addActionListener(this);
 		startButton.setBorderPainted(false);
+		startButton.setContentAreaFilled(false); 
+		startButton.setFocusPainted(false); 
+		startButton.setOpaque(false);
 		add(startButton);
 		
-		JButton quitButton = new JButton();
-		quitButton.setIcon(new ImageIcon("exitbutton.png"));
-		quitButton.addActionListener(new ActionListener() {
+		JButton exitButton = new JButton();
+		exitButton.setIcon(new ImageIcon("exitbutton.png"));
+		exitButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
 		});
-		quitButton.setBorderPainted(false);
-		add(quitButton);
+		exitButton.setBorderPainted(false);
+		exitButton.setContentAreaFilled(false); 
+		exitButton.setFocusPainted(false); 
+		exitButton.setOpaque(false);
+		add(exitButton);
 		
 		validate();
 	}
